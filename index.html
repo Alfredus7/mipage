@@ -352,36 +352,41 @@
    <!-- final de carrusel -->
   <div id="clickalvideo" onclick="quitarvideo()">click aqui para cerrar</div>
  <!-- la seccion de script -->
- <div class="modal" id="contactoModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content" style="color: #fff; background-color: rgb(124, 0, 124); opacity: 0.7;">
+ <div class="modal" id="contactoModal" role="dialog">
+    <div class="modal-content container-fluid" style="color: #fff; background-color: rgb(124, 0, 124); opacity: 0.7;">
       <div class="modal-header">
-        <h5 class="modal-title">Formulario de Contacto</h5><button type="button" class="btn btn-secondary" data-dismiss="modal" id="cerrarModal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h5 class="modal-title">Formulario de Contacto</h5>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cerrarModal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class="modal-body">
+
         <form action="mailto:fredav201612@Gmail.com" method="post" enctype="text/plain">
-          <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input style="color: #fff; background-color: rgb(83, 0, 83);" type="text" class="form-control" id="nombre" name="nombre">
-          </div>
-          <div class="form-group">
-            <label for="motivo">Motivo:</label>
-            <select  style="color: #fff; background-color: rgb(83, 0, 83);" class="form-control" id="motivo" name="motivo">
-              <option value="sugerencia">Sugerencia para el juego</option>
-              <option value="problema">Problema con el juego</option>
-              <option value="otro">Otro</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea style="color: #fff; background-color: rgb(83, 0, 83);" class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+          <div class="row">
+            <label for="nombre" class="label">Nombre:</label>
+            <div class="col-11 m-3">
+              <input style="color: #fff; background-color: rgb(83, 0, 83);" type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <label for="motivo" class="form-label">Motivo:</label>
+            <div class="col-11 m-3">
+              <select style="color: #fff; background-color: rgb(83, 0, 83);" class="form-control" id="motivo" name="motivo">
+                <option value="sugerencia">Sugerencia para el juego</option>
+                <option value="problema">Problema con el juego</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <label for="mensaje" class="form-label">Mensaje:</label>
+            <div class="col-11 m-3">
+              <textarea style="color: #fff; background-color: rgb(83, 0, 83);" class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+            </div>
           </div>
           <div class="text-center">
             <button type="submit" class="btn btn-primary">Enviar</button>
           </div>
         </form>
+      </div>
+    </div>
   </div>
-</div>
 
 
   <script>
